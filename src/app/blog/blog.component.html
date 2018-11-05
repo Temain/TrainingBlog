@@ -1,0 +1,68 @@
+<div class="container">
+    <app-layout-header [title]="'Блог'"></app-layout-header>
+
+    <div class="row">
+      <div class="col-12">
+          <app-layout-navbar></app-layout-navbar>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-3">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Знакомство</li>
+          <li class="list-group-item">Ухаживания</li>
+          <li class="list-group-item">Отношения</li>
+          <li class="list-group-item">Секс</li>
+          <li class="list-group-item">Расставание</li>
+          <li class="list-group-item">Возврат</li>
+          <li class="list-group-item">Дружба</li>
+          <li class="list-group-item">Школа мужества</li>
+          <li class="list-group-item">Школа женственности</li>
+          <li class="list-group-item">НЛП</li>
+          <li class="list-group-item">Стиль</li>
+        </ul>
+      </div>
+      <div class="col-9">
+        <div class="row mt-3 mb-3">
+            <div class="col-6">
+                <a class="btn btn-sm btn-outline-primary" [routerLink]="['/forum', 'add']">Добавить</a>
+            </div>
+          </div>
+        
+          <div>
+            <div>
+                <strong>Статья #1</strong>
+            </div>
+            <div>
+              <small>
+                  <markdown [data]="firstArticle"></markdown>
+              </small>
+            </div>   
+            <div>
+              <a [routerLink]="['/forum', 1]"><small>Читать дальше...</small></a>
+              <a class="float-right" [routerLink]="['/forum', 'edit', 1]"><small>Редактировать</small></a>
+            </div>
+          </div>
+      
+          <hr />
+      
+          <div>
+            <div>
+                <strong>Статья #2</strong>
+            </div>
+            <div>
+              <small>
+                  <markdown [data]="secondArticle"></markdown>
+              </small>
+            </div>   
+            <div>
+              <a [routerLink]="['/forum', 1]"><small>Читать дальше...</small></a>
+              <a class="float-right" [routerLink]="['/forum', 'edit', 1]"><small>Редактировать</small></a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- <app-layout-footer></app-layout-footer> -->

@@ -1,0 +1,5 @@
+<nav class="nav nav-masthead justify-content-center">
+  <a class="nav-link" [ngClass]="{ 'active' : isActiveLink('/') }" href="#">Главная</a>
+  <a routerLink="/blog" [ngClass]="{ 'active' : isActiveLink('/blog') }" class="nav-link" href="javascript:void(0);" >Блог</a>
+  <a routerLink="/forum" [ngClass]="{ 'active' : isActiveLink('/forum') }" class="nav-link" href="javascript:void(0);">Форум</a>
+</nav>

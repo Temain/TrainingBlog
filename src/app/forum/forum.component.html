@@ -1,0 +1,51 @@
+<div class="container">
+  <app-layout-header [title]="'Форум'"></app-layout-header>
+
+  <div class="row">
+    <div class="col-12">
+        <app-layout-navbar></app-layout-navbar>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row mt-3 mb-3">
+      <div class="col-6">
+        <a class="btn btn-sm btn-outline-primary" [routerLink]="['/forum', 'add']">Добавить</a>
+      </div>
+    </div>
+
+    <div>
+      <div>
+          <strong>Топик #1</strong>
+      </div>
+      <div>
+        <small>
+            <markdown [data]="firstTopic"></markdown>
+        </small>
+      </div>   
+      <div>
+        <a [routerLink]="['/forum', 1]"><small>Читать дальше...</small></a>
+        <a class="float-right" [routerLink]="['/forum', 'edit', 1]"><small>Редактировать</small></a>
+      </div>
+    </div>
+
+    <hr />
+
+    <div>
+      <div>
+          <strong>Топик #2</strong>
+      </div>
+      <div>
+        <small>
+            <markdown [data]="secondTopic"></markdown>
+        </small>
+      </div>   
+      <div>
+        <a [routerLink]="['/forum', 1]"><small>Читать дальше...</small></a>
+        <a class="float-right" [routerLink]="['/forum', 'edit', 1]"><small>Редактировать</small></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <app-layout-footer></app-layout-footer> -->
