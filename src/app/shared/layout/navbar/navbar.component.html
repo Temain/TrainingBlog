@@ -1,5 +1,30 @@
-<nav class="nav nav-masthead justify-content-center">
+<div id="navbarcollapse" class="collapse navbar-collapse">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a href="/" class="nav-link" [ngClass]="{ 'active' : isActiveLink('/') }">Главная</a>
+      </li>
+      <li class="nav-item">
+        <a href="/blog" class="nav-link" [ngClass]="{ 'active' : isActiveLink('/blog') }">Блог</a>
+      </li>
+      <li class="nav-item">
+        <a href="/forum" class="nav-link" [ngClass]="{ 'active' : isActiveLink('/forum') }">Форум</a>
+      </li>
+    </ul>
+    <div class="navbar-text">
+      <a href="#" class="search-btn"><i class="icon-search-1"></i></a>
+    </div>
+    <div class="ml-4">
+      <a class="btn btn-sm btn-outline-secondary" href="#">Регистрация</a>
+    </div>
+    <!-- <ul class="langs navbar-text">
+      <a href="#" class="active">EN</a>
+      <span></span>
+      <a href="#">ES</a>
+    </ul> -->
+  </div>
+
+<!-- <nav class="nav nav-masthead justify-content-center">
   <a class="nav-link" [ngClass]="{ 'active' : isActiveLink('/') }" href="#">Главная</a>
   <a routerLink="/blog" [ngClass]="{ 'active' : isActiveLink('/blog') }" class="nav-link" href="javascript:void(0);" >Блог</a>
   <a routerLink="/forum" [ngClass]="{ 'active' : isActiveLink('/forum') }" class="nav-link" href="javascript:void(0);">Форум</a>
-</nav>
+</nav> -->
