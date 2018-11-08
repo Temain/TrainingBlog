@@ -1,3 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'variables';
 @import '../node_modules/bootstrap/scss/bootstrap';
+
+html,
+body {
+  min-height: 100%;
+}
+
+.text-big {
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.8em;
+  color: #111;
+}
+
+/*
+* ==========================================================
+*     FOOTER
+* ==========================================================
+*/
+footer.main-footer {
+  background: #0e0e0e;
+  padding: 0;
+  color: #fff;
+}

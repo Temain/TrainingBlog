@@ -3,8 +3,31 @@
     <main class="posts-listing col-lg-8"> 
       <div class="container">
         <div class="row">
-          <!-- post -->
-          <div class="post col-xl-6">
+
+          <div class="post col-xl-6" *ngFor="let post of posts">
+            <div class="post-thumbnail">
+              <a href="javascript:void(0);" [routerLink]="['/blog', 1]">
+                <img [src]="post.image" alt="..." class="img-fluid">
+              </a>
+            </div>
+            <div class="post-details">
+              <div class="post-meta d-flex justify-content-between">
+                <div class="date meta-last">{{post.date | amLocale: 'ru' | amDateFormat:'DD MMMM | YYYY'}}</div>
+                <div class="category"><a href="#">{{post.tags | join}}</a></div>
+              </div>
+              <a href="javascript:void(0);" [routerLink]="['/blog', post.id]">
+              <h3 class="h4">{{post.title}}</h3></a>
+              <p class="text-muted">{{post.text}}</p>
+              <footer class="post-footer d-flex align-items-center"><a href="#" class="author d-flex align-items-center flex-wrap">
+                  <div class="avatar"><img src="assets/img/user.svg" alt="..." class="img-fluid"></div>
+                  <div class="title"><span>{{post.author}}</span></div></a>
+                <div class="date"><i class="icon-clock"></i> {{post.date | amLocale: 'ru' | amTimeAgo}}</div>
+                <div class="comments meta-last"><i class="icon-comment"></i>{{post.comments}}</div>
+              </footer>
+            </div>
+          </div>
+
+          <!-- <div class="post col-xl-6">
             <div class="post-thumbnail">
               <a href="javascript:void(0);" [routerLink]="['/blog', 1]">
                 <img src="assets/img/blog-post-1.jpeg" alt="..." class="img-fluid">
@@ -26,7 +49,6 @@
               </footer>
             </div>
           </div>
-          <!-- post             -->
           <div class="post col-xl-6">
             <div class="post-thumbnail"><a href="javascript:void(0);" [routerLink]="['/blog', 1]">
               <img src="assets/img/blog-post-2.jpg" alt="..." class="img-fluid"></a>
@@ -46,7 +68,6 @@
               </div>
             </div>
           </div>
-          <!-- post             -->
           <div class="post col-xl-6">
             <div class="post-thumbnail"><a href="javascript:void(0);" [routerLink]="['/blog', 1]"><img src="assets/img/blog-post-3.jpeg" alt="..." class="img-fluid"></a></div>
             <div class="post-details">
@@ -64,7 +85,6 @@
               </div>
             </div>
           </div>
-          <!-- post -->
           <div class="post col-xl-6">
             <div class="post-thumbnail"><a href="javascript:void(0);" [routerLink]="['/blog', 1]"><img src="assets/img/blog-post-4.jpeg" alt="..." class="img-fluid"></a></div>
             <div class="post-details">
@@ -81,7 +101,7 @@
                 <div class="comments meta-last"><i class="icon-comment"></i>12</div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
         <!-- Pagination -->
         <nav aria-label="Page navigation example">
