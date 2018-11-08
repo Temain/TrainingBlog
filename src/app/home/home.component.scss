@@ -6,7 +6,7 @@
 */
 section.hero {
   padding: 0;
-  // color: #fff;
+  color: black;
 }
 
 section.hero .container {
@@ -171,4 +171,13 @@ section.featured-posts .post-footer {
   section.featured-posts .post-footer {
     font-size: 0.75em;
   }
+}
+
+/*
+* ==========================================================
+*     LATEST SECTION
+* ==========================================================
+*/
+section.latest-posts header {
+  margin-bottom: 20px;
 }
