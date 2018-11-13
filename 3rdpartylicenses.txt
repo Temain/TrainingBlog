@@ -1,3 +1,6 @@
+ngx-disqus
+MIT
+
 codemirror
 MIT
 MIT License
@@ -359,9 +362,6 @@ MIT
 MIT
 
 ngx-markdown
-MIT
-
-ngx-disqus
 MIT
 
 @angular/http
