@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShowComponent implements OnInit {
 
-  pageId = '/show';
+  pageId = '/forum-show';
   firstTheme = `
     > Blockquotes are very handy in email to emulate reply text.
   `;

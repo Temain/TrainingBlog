@@ -28,7 +28,7 @@
             ],
             "styles": [
               "src/assets/css/fontastic.css",
-              "src/assets/css/style.violet.css",
+              "src/assets/css/style.default.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -86,7 +86,7 @@
             "karmaConfig": "src/karma.conf.js",
             "styles": [
               "src/assets/css/fontastic.css",
-              "src/assets/css/style.violet.css",
+              "src/assets/css/style.default.css",
               "src/styles.scss"
             ],
             "scripts": [],
